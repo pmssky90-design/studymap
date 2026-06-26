@@ -316,6 +316,30 @@ main > section li a:hover {
   box-shadow: 0 12px 26px rgba(37,99,235,.08);
   transform: translateY(-1px);
 }
+.link-section-collapsible.is-collapsed li:nth-child(n+31) {
+  display: none;
+}
+.link-more-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.link-more-toggle:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
 img, svg, video, canvas { max-width: 100%; height: auto; }
 a:focus-visible {
   outline: 3px solid rgba(37, 99, 235, .22);
@@ -460,9 +484,9 @@ a:focus-visible {
 </section>
 </div>
     <p>서초구과외 정보와 관련 허브를 제공합니다.</p>
-    <section><h2>상위 지역</h2><ul>
+    <section class="link-section"><h2>상위 지역</h2><ul>
 <li><a href="../">서울과외</a></li>
-</ul></section><section><h2>Sibling 지역</h2><ul>
+</ul></section><section class="link-section"><h2>Sibling 지역</h2><ul>
 <li><a href="../강남구과외/">강남구과외</a></li>
 <li><a href="../서대문과외/">서대문과외</a></li>
 <li><a href="../은평구과외/">은평구과외</a></li>
@@ -487,13 +511,13 @@ a:focus-visible {
 <li><a href="../영등포과외/">영등포과외</a></li>
 <li><a href="../서울용산구과외/">서울용산구과외</a></li>
 <li><a href="../중랑구과외/">중랑구과외</a></li>
-</ul></section><section><h2>자식 지역</h2><ul>
+</ul></section><section class="link-section"><h2>서초구의 행정동</h2><ul>
 <li><a href="반포동과외/">반포동과외</a></li>
 <li><a href="방배동과외/">방배동과외</a></li>
 <li><a href="서초동과외/">서초동과외</a></li>
 <li><a href="양재동과외/">양재동과외</a></li>
 <li><a href="잠원동과외/">잠원동과외</a></li>
-</ul></section><section><h2>관련 과외 허브</h2><ul>
+</ul></section><section class="link-section"><h2>관련 학습 가이드</h2><ul>
 <li><a href="../../서초구수학과외/">서초구수학과외</a></li>
 <li><a href="../../서초구영어과외/">서초구영어과외</a></li>
 <li><a href="../../서초구초등과외/">서초구초등과외</a></li>
@@ -507,5 +531,31 @@ a:focus-visible {
 <li><a href="../../서초구고등영어과외/">서초구고등영어과외</a></li>
 </ul></section>
   </main>
+<script>
+(function() {
+  function initLinkToggles() {
+    document.querySelectorAll('.link-section-collapsible').forEach(function(section) {
+      var button = section.querySelector('.link-more-toggle');
+      if (!button) return;
+      var items = section.querySelectorAll('li');
+      if (items.length <= 30) {
+        button.hidden = true;
+        return;
+      }
+      button.addEventListener('click', function() {
+        var expanded = section.classList.toggle('is-expanded');
+        section.classList.toggle('is-collapsed', !expanded);
+        button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        button.textContent = expanded ? '접기' : '더보기';
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLinkToggles);
+  } else {
+    initLinkToggles();
+  }
+})();
+</script>
 </body>
 </html>

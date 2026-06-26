@@ -322,6 +322,30 @@ main > section li a:hover {
   box-shadow: 0 12px 26px rgba(37,99,235,.08);
   transform: translateY(-1px);
 }
+.link-section-collapsible.is-collapsed li:nth-child(n+31) {
+  display: none;
+}
+.link-more-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.link-more-toggle:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
 img, svg, video, canvas { max-width: 100%; height: auto; }
 a:focus-visible {
   outline: 3px solid rgba(37, 99, 235, .22);
@@ -441,16 +465,16 @@ A: 과도한 학원 의존 대신 학교 생활과의 균형, 자녀의 정서�
 </section>
 </div>
     <p>안양동과외 정보와 관련 허브를 제공합니다.</p>
-    <section><h2>상위 지역</h2><ul>
+    <section class="link-section"><h2>상위 지역</h2><ul>
 <li><a href="../">안양과외</a></li>
-</ul></section><section><h2>Sibling 지역</h2><ul>
+</ul></section><section class="link-section"><h2>Sibling 지역</h2><ul>
 <li><a href="../관양동과외/">관양동과외</a></li>
 <li><a href="../비산동과외/">비산동과외</a></li>
 <li><a href="../평촌동과외/">평촌동과외</a></li>
 <li><a href="../호계동과외/">호계동과외</a></li>
 <li><a href="../박달동과외/">박달동과외</a></li>
 <li><a href="../석수동과외/">석수동과외</a></li>
-</ul></section><section><h2>관련 과외 허브</h2><ul>
+</ul></section><section class="link-section"><h2>관련 학습 가이드</h2><ul>
 <li><a href="../../../안양동수학과외/">안양동수학과외</a></li>
 <li><a href="../../../안양동영어과외/">안양동영어과외</a></li>
 <li><a href="../../../안양동초등과외/">안양동초등과외</a></li>
@@ -464,5 +488,31 @@ A: 과도한 학원 의존 대신 학교 생활과의 균형, 자녀의 정서�
 <li><a href="../../../안양동고등영어과외/">안양동고등영어과외</a></li>
 </ul></section>
   </main>
+<script>
+(function() {
+  function initLinkToggles() {
+    document.querySelectorAll('.link-section-collapsible').forEach(function(section) {
+      var button = section.querySelector('.link-more-toggle');
+      if (!button) return;
+      var items = section.querySelectorAll('li');
+      if (items.length <= 30) {
+        button.hidden = true;
+        return;
+      }
+      button.addEventListener('click', function() {
+        var expanded = section.classList.toggle('is-expanded');
+        section.classList.toggle('is-collapsed', !expanded);
+        button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        button.textContent = expanded ? '접기' : '더보기';
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLinkToggles);
+  } else {
+    initLinkToggles();
+  }
+})();
+</script>
 </body>
 </html>

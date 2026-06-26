@@ -322,6 +322,30 @@ main > section li a:hover {
   box-shadow: 0 12px 26px rgba(37,99,235,.08);
   transform: translateY(-1px);
 }
+.link-section-collapsible.is-collapsed li:nth-child(n+31) {
+  display: none;
+}
+.link-more-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.link-more-toggle:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
 img, svg, video, canvas { max-width: 100%; height: auto; }
 a:focus-visible {
   outline: 3px solid rgba(37, 99, 235, .22);
@@ -421,9 +445,9 @@ p: 일정한 학습 공간 확보, 집중 시간을 방해하는 요소를 최�
 </section>
 </div>
     <p>아름동과외 지역의 고등영어과외 정보 페이지입니다.</p>
-    <section><h2>원본 지역 페이지</h2><ul>
+    <section class="link-section"><h2>원본 지역 페이지</h2><ul>
 <li><a href="../세종과외/아름동과외/">아름동과외</a></li>
-</ul></section><section><h2>동일 지역의 다른 허브</h2><ul>
+</ul></section><section class="link-section"><h2>동일 지역의 다른 허브</h2><ul>
 <li><a href="../아름동수학과외/">아름동수학과외</a></li>
 <li><a href="../아름동영어과외/">아름동영어과외</a></li>
 <li><a href="../아름동초등과외/">아름동초등과외</a></li>
@@ -436,5 +460,31 @@ p: 일정한 학습 공간 확보, 집중 시간을 방해하는 요소를 최�
 <li><a href="../아름동중등영어과외/">아름동중등영어과외</a></li>
 </ul></section>
   </main>
+<script>
+(function() {
+  function initLinkToggles() {
+    document.querySelectorAll('.link-section-collapsible').forEach(function(section) {
+      var button = section.querySelector('.link-more-toggle');
+      if (!button) return;
+      var items = section.querySelectorAll('li');
+      if (items.length <= 30) {
+        button.hidden = true;
+        return;
+      }
+      button.addEventListener('click', function() {
+        var expanded = section.classList.toggle('is-expanded');
+        section.classList.toggle('is-collapsed', !expanded);
+        button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        button.textContent = expanded ? '접기' : '더보기';
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLinkToggles);
+  } else {
+    initLinkToggles();
+  }
+})();
+</script>
 </body>
 </html>
