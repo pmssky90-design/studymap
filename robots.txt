@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://studynote.co.kr/sitemap.xml
+Sitemap: https://studymap.co.kr/sitemap.xml
