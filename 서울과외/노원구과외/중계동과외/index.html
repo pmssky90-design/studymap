@@ -155,6 +155,11 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0;
 }
+.fixed-image-stack {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
 .article-body.studynavi-flow {
   width: 100%;
   max-width: 1000px;
@@ -328,6 +333,7 @@ a:focus-visible {
   main { width: 100%; padding: 28px 16px 64px; }
   .breadcrumbs { font-size: .88rem; margin-bottom: 18px; }
   h1 { margin-bottom: 24px; font-size: clamp(1.85rem, 9vw, 2.55rem); }
+  .fixed-image-stack { margin-bottom: 52px; }
   .article-body.studynavi-flow { font-size: 16px; line-height: 1.82; margin-bottom: 52px; }
   .representative-image,
   .flow-image { margin: 26px 0; }
@@ -350,19 +356,23 @@ a:focus-visible {
   <main>
     <nav class="breadcrumbs" aria-label="breadcrumb"><ol><li><a href="../../../">Home</a></li><li><a href="../../">서울과외</a></li><li><a href="../">노원구과외</a></li><li><a href="./">중계동과외</a></li></ol></nav>
     <h1>중계동과외</h1>
-    <div class="article-body studynavi-flow">
+    <div class="fixed-image-stack">
 <figure class="representative-image"><img src="../../../images/thumbs/fixed/001.png" alt="중계동과외 맞춤 과외 안내 이미지 001" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <figure class="flow-image"><img src="../../../images/thumbs/fixed/002.png" alt="중계동과외 맞춤 과외 안내 이미지 002" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/003.png" alt="중계동과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/004.png" alt="중계동과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/005.png" alt="중계동과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/006.png" alt="중계동과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
+</div>
+    <div class="article-body studynavi-flow">
 <section class="article-card">
 <h2>지역 학습 환경</h2>
 <p>중계동은 노원구의 중심부에 위치한 주거 동네로, 초중고 학령 인구가 균형 있게 분포해 있습니다. 중계동의 학원 밀집도는 강북권의 다른 지역에 비해 상대적으로 안정적이며, 주거 환경의 안정성과 대중교통 접근성이 결합되어 자율 학습 시간 확보에 유리합니다. 생활권의 구성은 주거형 아파트 단지와 학부모가 선호하는 학습 공간(도서관, 독서실 주변 카페, 공공 학습 공간)이 근접한 편이며, 인접 지역으로의 이동이 비교적 쉬워 다양한 학습 자원에 접근이 가능합니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/003.png" alt="중계동과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학생들이 자주 겪는 학습 고민</h2>
 <p>중계동 일대의 중학생과 고등학생은 수학의 난도 상승, 영어 독해와 어휘 습관 형성, 국내외 모의고사 대비의 필요성 등에서 공통된 고민을 호소합니다. 특히 지역 내 학원 운영의 다양성으로 인해 과목별 집중 학습과 주간 학습 계획의 차이가 생깁니다. 자율 학습 시간 확보를 위한 시간 관리, 학교 수업과의 연계 학습, 집·학교 간의 학습 공간 차이를 메우는 방법이 의미가 있습니다. 아울러 과제의 체계적 정리와 오답 노트 관리 습관이 부족한 경우 성적의 정체가 길어질 수 있습니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/004.png" alt="중계동과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학교 생활과 시험 준비</h2>
 <p>중계동의 학교들은 비교적 체계적인 평가 제도와 내부 평가 환경을 제공합니다. 다만 학교별로 내신 반영 비율이나 시험 형식이 다르므로 학생은 소속 학교의 학사일정을 우선 확인해야 합니다. 시험 준비는 학교 수업의 핵심 포인트를 명확히 정리한 뒤, 중계동 생활권 내 학습 공간에서 집중하는 패턴이 효과적입니다. 모의고사 활용은 지역별 문제 유형을 파악하는 데 도움이 되며, 지역 학원과의 협력을 통해 과목별 균형 학습이 필요합니다.</p>
@@ -379,12 +389,10 @@ a:focus-visible {
 <h3>시간 관리</h3>
 <p>통학 시간, 수업 시간, 과외 시간 등을 고려한 주간 루틴을 만들고, 남는 시간은 복습과 예습에 배분합니다. 지역 내 교통 편의성을 고려해 이동 시간을 최소화하는 계획이 필요합니다. 특히 시험 주간에는 과목별 집중 시간을 재배치해 피로를 관리합니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/005.png" alt="중계동과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학부모 관심사</h2>
 <p>중계동 학부모는 무엇보다 자녀의 학습 환경에 큰 관심을 가지며, 안전하고 조용한 학습 공간 확보, 합리적 학습 학습 여건, 과목별 실력 향상을 위한 맞춤형 학습 계획 등을 중시합니다. 지역 내 도서관 및 공공 학습 공간의 이용 가능 여부, 학원 선택 시 교사 역량과 학습 성과의 상관성이 중요한 요소로 작용합니다. 아울러 가정의 학습 분위기 조성과 시간 관리 습관의 뒷받침이 필요합니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/006.png" alt="중계동과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>지역 학습 문화</h2>
 <p>중계동은 가족 중심의 학습 문화가 강하고, 학교와 지역사회가 학습에 대한 공감대를 형성합니다. 인접 지역인 상계동, 공릉동, 월계동으로의 학습 자원 공유도 활발합니다. 지역 내 학습 모임이나 스터디 그룹이 형성되며, 의사소통이 활발한 학교–가정 간 협력 문화가 자리 잡고 있습니다. 학부모 간 정보 공유가 활발한 편이며, 친구 관계를 통한 학습 동기 부여가 강하게 작용합니다.</p>

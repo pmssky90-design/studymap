@@ -161,6 +161,11 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0;
 }
+.fixed-image-stack {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
 .article-body.studynavi-flow {
   width: 100%;
   max-width: 1000px;
@@ -334,6 +339,7 @@ a:focus-visible {
   main { width: 100%; padding: 28px 16px 64px; }
   .breadcrumbs { font-size: .88rem; margin-bottom: 18px; }
   h1 { margin-bottom: 24px; font-size: clamp(1.85rem, 9vw, 2.55rem); }
+  .fixed-image-stack { margin-bottom: 52px; }
   .article-body.studynavi-flow { font-size: 16px; line-height: 1.82; margin-bottom: 52px; }
   .representative-image,
   .flow-image { margin: 26px 0; }
@@ -356,14 +362,19 @@ a:focus-visible {
   <main>
     <nav class="breadcrumbs" aria-label="breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../서울과외/">서울과외</a></li><li><a href="../서울과외/동대문과외/">동대문과외</a></li><li><a href="../서울과외/동대문과외/신설동과외/">신설동과외</a></li><li><a href="./">신설동고등수학과외</a></li></ol></nav>
     <h1>신설동고등수학과외</h1>
-    <div class="article-body studynavi-flow">
+    <div class="fixed-image-stack">
 <figure class="representative-image"><img src="../images/thumbs/fixed/001.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 001" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <figure class="flow-image"><img src="../images/thumbs/fixed/002.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 002" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/003.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/004.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/005.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/006.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
+</div>
+    <div class="article-body studynavi-flow">
 <section class="article-card">
 <h2>강북구 고등수학과외를 위한 학습환경과 전략</h2>
 <p>지역의 학부모와 학생들이 고등수학과외를 고민할 때 가장 먼저 떠올리는 것은 학습환경과 시간관리다. 강북구의 많은 고등학생은 가정 학습환경을 활용하거나 도서관·독서실 같은 공공학습시설을 적극적으로 이용한다. 이러한 환경은 집중력과 시간 관리에 직접적인 영향을 미치며, 학부모의 고민도 같이 커진다. 수학을 체계적으로 공부하려면 단원별 개념 학습과 문제 풀이를 균형 있게 배치하는 것이 중요하다. 특히 내신 관리와 모의고사 대비를 염두에 두고 학습 계획을 세우면, 지역의 1년 일정에 맞춘 시간 관리가 훨씬 수월해진다. 강북구 학생이라도 지역별 학습환경을 최대한 활용하면 고등수학의 핵심 역량인 사고력과 문제해결력을 키우는 데 큰 도움이 된다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/003.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>고등학교 학년별 특징</h2>
 <ul>
@@ -373,12 +384,10 @@ a:focus-visible {
 </ul>
 <p>강북구의 많은 학생들은 초반에 기본 개념을 확실히 다진 뒤, 모의고사와 실전 문제를 통해 문제 유형 파악을 빠르게 진행한다. 학년별 특징을 반영한 학습 루틴은 서술형 대비와 시간 관리에 큰 도움을 준다. 아울러 내신 관리와 학생부 관리의 중요성이 커지는 시점에 맞춰, 체계적으로 기록하고 점검하는 습관이 필요하다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/004.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>수학의 한 단원: 미적분의 이해와 응용</h2>
 <p>미적분은 학생들이 흔히 어려워하는 단원 중 하나다. 이 단원에서 학생들이 자주 접하는 문제는 미분의 기본 원리와 함수의 변화율을 연결하는 과정에서의 해석이다. 예를 들어 접선의 방정식이나 극대·극소의 위치를 구하는 문제에서 해석적 사고와 계산력이 함께 요구된다. 왜 어려워지는가를 살펴보면, 개념의 추상성, 문제해석의 방향성, 풀이 순서의 실수 등이 주된 요인이다. 단원 학습의 흐름은 먼저 정의와 기본 성질을 확실히 이해하고, 이어서 여러 유형의 문제를 통해 유형별 풀이 전략을 익히는 순서가 효과적이다. 특히 내신에서도 미적분의 규칙성이나 접합점의 특징을 묻는 문제가 자주 출제되므로, 수능 포인트를 염두에 두고 학습하는 것이 중요하다. 이를 통해 강북구 학생들도 고등수학개념과 계산력, 그리고 사고력의 균형을 갖춘 학습이 가능하다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/005.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학습법과 공부법</h2>
 <ul>
@@ -404,7 +413,6 @@ a:focus-visible {
 </ul>
 <p>효과적인 학습법은 개념·예제·유형의 균형이다. 기본 개념은 노트에 끊임없이 정리하고, 예제로 개념의 의미를 확인한 뒤, 유형학습으로 문제풀이의 패턴을 익힌다. 오답노트를 활용해 자주 틀리는 부분을 보완하고, 모의고사 분석으로 수능 포인트를 정리한다. 아울러 수능 2주 전 공부법이나 시험 직전 전략도 미리 계획해 두면 시간 관리가 수월해진다. 강북구 학부모와 학생은 가정의 학습환경을 점검하고, 독서실이나 도서관의 이용 시간을 최적화하는 것이 좋다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/006.png" alt="신설동고등수학과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학생부 관리와 수시·정시 전략</h2>
 <ul>

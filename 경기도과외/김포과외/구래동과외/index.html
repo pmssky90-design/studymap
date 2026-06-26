@@ -155,6 +155,11 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0;
 }
+.fixed-image-stack {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
 .article-body.studynavi-flow {
   width: 100%;
   max-width: 1000px;
@@ -328,6 +333,7 @@ a:focus-visible {
   main { width: 100%; padding: 28px 16px 64px; }
   .breadcrumbs { font-size: .88rem; margin-bottom: 18px; }
   h1 { margin-bottom: 24px; font-size: clamp(1.85rem, 9vw, 2.55rem); }
+  .fixed-image-stack { margin-bottom: 52px; }
   .article-body.studynavi-flow { font-size: 16px; line-height: 1.82; margin-bottom: 52px; }
   .representative-image,
   .flow-image { margin: 26px 0; }
@@ -350,19 +356,23 @@ a:focus-visible {
   <main>
     <nav class="breadcrumbs" aria-label="breadcrumb"><ol><li><a href="../../../">Home</a></li><li><a href="../../">경기도과외</a></li><li><a href="../">김포과외</a></li><li><a href="./">구래동과외</a></li></ol></nav>
     <h1>구래동과외</h1>
-    <div class="article-body studynavi-flow">
+    <div class="fixed-image-stack">
 <figure class="representative-image"><img src="../../../images/thumbs/fixed/001.png" alt="구래동과외 맞춤 과외 안내 이미지 001" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <figure class="flow-image"><img src="../../../images/thumbs/fixed/002.png" alt="구래동과외 맞춤 과외 안내 이미지 002" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/003.png" alt="구래동과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/004.png" alt="구래동과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/005.png" alt="구래동과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../images/thumbs/fixed/006.png" alt="구래동과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
+</div>
+    <div class="article-body studynavi-flow">
 <section class="article-card">
 <h2>지역 학습 환경</h2>
 <p>구래동은 작은 생활권을 형성하는 주거 지역과 상업 지역이 공존하며, 학습에 필요한 환경이 비교적 안정적으로 구성되어 있습니다. 구래동의 행정동 경계 안에는 초등·중고교를 포함한 교육 자원이 어느 정도 밀집해 있으며, 자녀의 통학 시간과 가족의 일상 리듬에 맞춘 학습 루틴을 만들기 좋습니다. 주거 형태가 다양하고 주말에도 가족 단위의 활동이 잦아 학습 집중력에 긍정적 영향을 주는 경우가 많습니다. 아울러 도서관이나 공공시설 이용이 비교적 용이한 편이라 자유로운 독서와 자료 탐색이 가능해 학생의 자가 학습 능력이 자연스럽게 강화됩니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/003.png" alt="구래동과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학생들이 자주 겪는 학습 고민</h2>
 <p>구래동 많은 학생들은 대체로 다음과 같은 학습 고민을 공유합니다. 시간 관리의 어려움, 과목 간 학습 균형 잡기, 시험-oriented 학습의 피로 누적, 그리고 지역 내 교사-학부모 간 의사소통의 필요성 등입니다. 특히 통학 시간과 가족 일정의 충돌로 일관된 학습 습관을 유지하기 어려운 경우가 있어, 지역 생활권의 특성에 맞춘 구체적 계획 수립이 의미가 있습니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/004.png" alt="구래동과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학교 생활과 시험 준비</h2>
 <p>구래동은 인접 학군의 여러 중·고교가 생활권 내에 위치해 있어 학생들이 비교적 짧은 이동으로 학교 생활에 참여합니다. 학교별로 내신 관리 체계나 시험 일정이 다르기 때문에 학부모와 학생은 자신이 다니는 학교의 일정에 맞춘 공부 계획을 세워야 합니다. 정규 수업 외에 방과후 활동과 지역 학원 수강을 조절하는 과정에서 과도한 과외 의존을 피하고, 지역 학습 환경을 활용한 자율 학습 시간을 확보하는 것이 바람직합니다.</p>
@@ -373,12 +383,10 @@ a:focus-visible {
 <h3>영어 공부 방향</h3>
 <p>영어는 독해력과 어휘력이 핵심인데, 지역 생활권에 맞춘 실전 자료를 활용하는 것이 효과적입니다. 구래동 인근의 생활권 내에서 접하는 기사나 짧은 글을 읽고, 어휘를 주기적으로 복습하는 루틴을 추천합니다. 듣기: 짧은 동영상이나 팟캐스트를 활용하고, 말하기는 학습 파트너와 주 1회 대화를 실천하는 구조를 제시합니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/005.png" alt="구래동과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학습 습관</h2>
 <p>자기 주도 학습 습관 형성을 위해 구래동에서는 매일 같은 시간에 공부하는 루틴이 의미가 있습니다. 우선순위를 정하고, 25분 집중-5분 휴식의 포모도로 기법을 지역 생활 리듬에 맞춰 적용합니다. 공부 공간은 집 안에서 조용하고 정리된 공간으로 유지하고, 학습 목표를 매일 또는 매주 기록하는 습관이 필요합니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../images/thumbs/fixed/006.png" alt="구래동과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>시간 관리</h2>
 <p>구래동의 가족들은 통학 시간과 가족 활동 일정이 겹치지 않도록 주간 학습 계획표를 미리 작성하는 경우가 많습니다. 극단적인 과외 집중보다는 학교 수업과 자율학습의 균형을 맞추는 편이 효과적이며, 주말에는 복습과 예습을 고르게 배치하는 것이 좋습니다.</p>

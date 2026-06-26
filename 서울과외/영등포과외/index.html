@@ -149,6 +149,11 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0;
 }
+.fixed-image-stack {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
 .article-body.studynavi-flow {
   width: 100%;
   max-width: 1000px;
@@ -322,6 +327,7 @@ a:focus-visible {
   main { width: 100%; padding: 28px 16px 64px; }
   .breadcrumbs { font-size: .88rem; margin-bottom: 18px; }
   h1 { margin-bottom: 24px; font-size: clamp(1.85rem, 9vw, 2.55rem); }
+  .fixed-image-stack { margin-bottom: 52px; }
   .article-body.studynavi-flow { font-size: 16px; line-height: 1.82; margin-bottom: 52px; }
   .representative-image,
   .flow-image { margin: 26px 0; }
@@ -344,9 +350,15 @@ a:focus-visible {
   <main>
     <nav class="breadcrumbs" aria-label="breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">서울과외</a></li><li><a href="./">영등포과외</a></li></ol></nav>
     <h1>영등포과외</h1>
-    <div class="article-body studynavi-flow">
+    <div class="fixed-image-stack">
 <figure class="representative-image"><img src="../../images/thumbs/fixed/001.png" alt="영등포과외 맞춤 과외 안내 이미지 001" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <figure class="flow-image"><img src="../../images/thumbs/fixed/002.png" alt="영등포과외 맞춤 과외 안내 이미지 002" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../images/thumbs/fixed/003.png" alt="영등포과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../images/thumbs/fixed/004.png" alt="영등포과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../images/thumbs/fixed/005.png" alt="영등포과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../images/thumbs/fixed/006.png" alt="영등포과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
+</div>
+    <div class="article-body studynavi-flow">
 <section class="article-card">
 <h2>영등포구의 지역 학습 환경과 생활권 특징</h2>
 <p>영등포구는 서울의 중앙 남부에 위치한 지역으로, 영등포동·당산동·여의도동·신길동·문래동·양평동·대림동 등 다수의 행정동으로 구성되어 있다. 이 지역은 지하철 2호선의 당산역·영등포구청역·신길역, 5호선의 여의도역·영등포시장역, 1호선의 신길역 등 주요 역이 집중되어 있어 통학과 주변 학습 공간 접근성이 우수합니다. 아울러 여의도 국제업무지구와 인접한 특성상 주중 학습 분위기가 조성되고, 주말이나 저녁 시간대에는 자습 공간과 독서 모임이 활발하게 운영되기도 합니다. 생활권 차원에서 보면 각 동의 도로망이 촘촘하고, 학원가와 도서관, 공공시설이 비교적 골고루 분포해 있어 학생들의 학습 환경이 상대적으로 양호합니다.</p>
@@ -369,7 +381,6 @@ a:focus-visible {
 <h3>학교 생활과 생활권의 융합</h3>
 <p>많은 학생들은 자주 이용하는 학교 주변의 카페형 공부 공간이나 도서관, 학원가를 활용해 학습 루틴을 구성합니다. 학교 행사나 지역 축제의 일정에 맞춰 협력 학습을 진행하기도 하며, 특정 역과 생활권의 특성에 맞춘 과목별 학습 루틴이 형성될 수 있습니다. 이런 현상은 지역 맞춤형 학습 환경의 중요한 예시가 됩니다.</p>
 </section>
-<figure class="flow-image"><img src="../../images/thumbs/fixed/003.png" alt="영등포과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>지역 학습 환경 변화에 따른 학습 고민</h2>
 <p>영등포구의 학습 고민은 크게 3가지 축으로 나뉩니다. 첫째, 통학 시간과 집중력 관리 문제. 둘째, 시험 대비의 체계성 부족 문제. 셋째, 학부모의 정보 격차로 인한 불안감입니다. 이 지역은 역과 생활권이 밀집해 있어 비교적 짧은 통학 시간과 다양한 자율학습 공간이 강점으로 작용하지만, 학습 공간의 질 차이와 시기에 따른 이용 가능성이 학습 계획의 변수가 됩니다.</p>
@@ -386,12 +397,10 @@ a:focus-visible {
 <h3>시간 관리</h3>
 <p>대림동과 신길동 등 주거지 인근의 주차/대중교통 이용 시간대를 고려한 일정 표를 구성하는 것이 좋습니다. 예를 들어 수학 문제 풀이를 50분, 휴식 10분으로 구성하고, 영어는 독해 40분, 어휘 복습 20분으로 계획합니다. 학교 일정과 학원 수강 시간을 반영해 주간 계획표를 만들면 효과적입니다.</p>
 </section>
-<figure class="flow-image"><img src="../../images/thumbs/fixed/004.png" alt="영등포과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학부모 관심사와 부모-자녀 학습 협력</h2>
 <p>부모는 자녀의 학습 계획과 진로 탐색에 대해 적극적인 정보를 원합니다. 지역의 진로 학습 점검 프로그램, 학원 간 비교 정보, 학교별 발표자료를 통해 자녀의 강점과 보완점을 함께 점검하는 것이 좋습니다. 생활권의 학부모 커뮤니티를 활용하면 정보 공유와 심리적 지지망이 형성됩니다.</p>
 </section>
-<figure class="flow-image"><img src="../../images/thumbs/fixed/005.png" alt="영등포과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>지역 학습 문화의 실제 사례</h2>
 <p>사례 1: 한 중학생 민수는 영등포동에서 자주 가던 도서관을 중심으로 주중 2회, 주말 1회 자기주도 학습을 유지합니다. 당산동의 학원가에서 수학 심화 수업을 들으며, 여의도역 인근 카페형 공간에서 영어 독해 모임에 참여합니다. 이로써 수학과 영어의 기초와 응용 능력이 균형 있게 성장했습니다.</p>
@@ -405,7 +414,6 @@ a:focus-visible {
 
 <blockquote>사례 3은 학부모 관여와 지역 커뮤니티의 역할을 강조하는 예시입니다.</blockquote>
 </section>
-<figure class="flow-image"><img src="../../images/thumbs/fixed/006.png" alt="영등포과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학습 습관과 시간 관리 체크리스트</h2>
 <ul>

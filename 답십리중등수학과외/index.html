@@ -161,6 +161,11 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0;
 }
+.fixed-image-stack {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
 .article-body.studynavi-flow {
   width: 100%;
   max-width: 1000px;
@@ -334,6 +339,7 @@ a:focus-visible {
   main { width: 100%; padding: 28px 16px 64px; }
   .breadcrumbs { font-size: .88rem; margin-bottom: 18px; }
   h1 { margin-bottom: 24px; font-size: clamp(1.85rem, 9vw, 2.55rem); }
+  .fixed-image-stack { margin-bottom: 52px; }
   .article-body.studynavi-flow { font-size: 16px; line-height: 1.82; margin-bottom: 52px; }
   .representative-image,
   .flow-image { margin: 26px 0; }
@@ -356,14 +362,19 @@ a:focus-visible {
   <main>
     <nav class="breadcrumbs" aria-label="breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../서울과외/">서울과외</a></li><li><a href="../서울과외/동대문과외/">동대문과외</a></li><li><a href="../서울과외/동대문과외/답십리과외/">답십리과외</a></li><li><a href="./">답십리중등수학과외</a></li></ol></nav>
     <h1>답십리중등수학과외</h1>
-    <div class="article-body studynavi-flow">
+    <div class="fixed-image-stack">
 <figure class="representative-image"><img src="../images/thumbs/fixed/001.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 001" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <figure class="flow-image"><img src="../images/thumbs/fixed/002.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 002" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/003.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/004.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/005.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/006.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
+</div>
+    <div class="article-body studynavi-flow">
 <section class="article-card">
 <h2>중등수학과외와 학습환경의 핵심</h2>
 <p>중학생 수학은 개념의 기초가 튼튼해야만 다양한 유형을 만나도 흐름을 잃지 않습니다. 중등 수학의 핵심은 개념학습과 예제풀이를 자연스럽게 연결하고, 오답정리와 예습복습으로 체계를 다지는 습관입니다. 특히 중등 공부습관과 중등 자기주도학습은 학생의 학습환경에 큰 영향을 줍니다. 도서관이나 공공학습시설 같은 외부 공간 활용도 중요한데, 집중 가능한 환경을 확보하면 수학의 서술형 문제나 유형학습에서 차이가 생깁니다. 아래에서는 지역 학습환경에 맞춘 구체적인 실천법과 함께 중등 수학 학습의 구조를 제시합니다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/003.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>중학교 학년별 특징</h2>
 <p>중1: 초등수학과의 차이점은 분명합니다. 과목이 증가하고 새로운 수학 개념을 익히며, 공통적으로 필요한 공부습관 형성이 시작됩니다. 이 시기에는 꾸준한 예습과 복습 루틴을 만드는 것이 관건입니다.</p>
@@ -389,7 +400,6 @@ a:focus-visible {
 <li>고등 준비를 위한 핵심 포인트 정리</li>
 </ul>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/004.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>선택된 중등 단원: 함수</h2>
 <p>이번에 다룰 단원은 함수입니다. 학생들이 어려워하는 이유는 변수 간의 관계를 구체적으로 이해하는 데서 시작됩니다. 함수의 핵심은 1) 입력과 출력의 관계를 명확히 파악 2) 그래프를 통해 변화의 흐름을 시각화 3) 다양한 형태의 문제에서 동일한 원리를 적용하는 일관성에 있습니다.</p>
@@ -398,12 +408,10 @@ a:focus-visible {
 
 <p>학생들이 자주 틀리는 포인트는 계산 실수, 조건 누락, 문제 해석의 오해, 풀이 순서의 혼동, 시간 부족, 공식 암기 중심의 습관 등입니다. 특히 시간 관리가 부족하면 문제를 끝내지 못하고 서술형 요소를 놓치는 경우가 많아, 2주 전부터의 시험대비와 예습복습의 균형이 필요합니다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/005.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>사례: 중2 사례</h2>
 <p>수업 중 질문이 많았던 학생은 함수의 그래프를 그릴 때 수치적 표현과 그래프 모양의 연결 고리를 찾는 데 애를 봤습니다. 이 학생은 개념학습에서 흐름을 이해했고, 예제 풀이를 통해 규칙성을 확인했지만 유형이 바뀌면 풀이가 달라지는 문제에서 막혔습니다. 그래서 유형별 정리와 오답노트를 시작했고, 풀이를 말로 설명하는 습관을 도입했습니다. 이에 따라 같은 원리의 문제를 반복적으로 접하면서 서서히 문제해결력이 늘었고, 시간 관리도 개선되었습니다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/006.png" alt="답십리중등수학과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>중등 공부습관과 학습법</h2>
 <ul>

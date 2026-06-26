@@ -161,6 +161,11 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0;
 }
+.fixed-image-stack {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
 .article-body.studynavi-flow {
   width: 100%;
   max-width: 1000px;
@@ -334,6 +339,7 @@ a:focus-visible {
   main { width: 100%; padding: 28px 16px 64px; }
   .breadcrumbs { font-size: .88rem; margin-bottom: 18px; }
   h1 { margin-bottom: 24px; font-size: clamp(1.85rem, 9vw, 2.55rem); }
+  .fixed-image-stack { margin-bottom: 52px; }
   .article-body.studynavi-flow { font-size: 16px; line-height: 1.82; margin-bottom: 52px; }
   .representative-image,
   .flow-image { margin: 26px 0; }
@@ -356,19 +362,23 @@ a:focus-visible {
   <main>
     <nav class="breadcrumbs" aria-label="breadcrumb"><ol><li><a href="../../../../">Home</a></li><li><a href="../../../">경기도과외</a></li><li><a href="../../">성남과외</a></li><li><a href="../">수정구과외</a></li><li><a href="./">창곡동과외</a></li></ol></nav>
     <h1>창곡동과외</h1>
-    <div class="article-body studynavi-flow">
+    <div class="fixed-image-stack">
 <figure class="representative-image"><img src="../../../../images/thumbs/fixed/001.png" alt="창곡동과외 맞춤 과외 안내 이미지 001" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <figure class="flow-image"><img src="../../../../images/thumbs/fixed/002.png" alt="창곡동과외 맞춤 과외 안내 이미지 002" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../../images/thumbs/fixed/003.png" alt="창곡동과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../../images/thumbs/fixed/004.png" alt="창곡동과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../../images/thumbs/fixed/005.png" alt="창곡동과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../../../../images/thumbs/fixed/006.png" alt="창곡동과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
+</div>
+    <div class="article-body studynavi-flow">
 <section class="article-card">
 <h2>지역 학습 환경</h2>
 <p>창곡동의 학습 환경은 주거 밀집도와 도보 통학권이 중요한 특징으로 작용합니다. 인접 행정동과의 경계로 교차하는 생활권이 형성되며, 대중교통이 비교적 편리한 위치일수록 학생들의 등하교와 과제 수행에 긍정적 영향을 줍니다. 창곡동은 주거형태가 다층 주택과 단독주택의 혼합으로 구성되어 있어 가정 내 학습 분위기가 좌우됩니다. 학원 수요는 인근 생활권의 학습 열기에 좌우되며, 주거 환경이 편리한 지역일수록 학습 공간 확보를 위한 시간 관리가 중요해집니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../../images/thumbs/fixed/003.png" alt="창곡동과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학생들이 자주 겪는 학습 고민</h2>
 <p>창곡동과 인접 지역의 많은 학생들은 주거 환경 변화에 따른 집중력 저하, 학교 행사와 학습 일정의 조정, 통학 시간 관리, 가족의 학습 지원 시스템 부재 등을 자주 언급합니다. 특히 수학과 영어의 기초 다지기를 넘어 고난이도 문제 해결 능력과 어휘력 확장을 동시에 요구하는 시기에, 가정 내 학습 실천 계획의 명확성이 큰 차이를 만듭니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../../images/thumbs/fixed/004.png" alt="창곡동과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학교 생활과 시험 준비</h2>
 <p>지역의 통학권과 생활권 특성상 시험 준비는 집과 학교 외의 장소에서의 독립적 학습 시간이 의미가 있습니다. 창곡동 인근의 학교 생활은 비교적 규칙적인 학사 일정에 맞춰 수업-자습-과제의 균형을 맞추려는 경향이 있습니다. 시험 준비에서는 수학의 문제풀이 루틴, 영어의 독해 및 청취 연습, 과학·사회 과목의 핵심 개념 암기가 중심이 됩니다. 학교별로 자습실 이용 시간대의 혼잡도 차이가 있으니, 학생 개인의 시간 관리가 의미가 있습니다.</p>
@@ -385,12 +395,10 @@ a:focus-visible {
 <h3>시간 관리</h3>
 <p>통학 시간, 학교 숙제, 과외 활동을 고려한 주간 계획을 미리 작성합니다. 주말에는 학습 목표를 점검하고, 남은 과제와 약점을 분류합니다. 시간 관리의 핵심은 과제의 우선순위를 정하고, 실현 가능하게 스케줄을 조정하는 능력입니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../../images/thumbs/fixed/005.png" alt="창곡동과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>학부모 관심사</h2>
 <p>학부모는 무엇보다 자녀의 학습 공간 확보, 일관된 학습 습관 형성, 안전한 통학 환경, 학교 생활의 질 관리에 관심이 많습니다. 창곡동의 주거 환경 특성상 가정 차원의 학습 분위기 조성과 통학 거리의 합리적 조정이 자녀의 학업에 직접 영향을 미칩니다. 자녀의 집중 상태를 존중하되, 매일의 소통과 피드백 루프를 유지하는 것이 의미가 있습니다.</p>
 </section>
-<figure class="flow-image"><img src="../../../../images/thumbs/fixed/006.png" alt="창곡동과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>지역 학습 문화</h2>
 <p>지역 학습 문화는 가족 중심의 학습 지원 강화, 이웃 간의 학습 정보 공유, 학교 행정동 간의 협력으로 형성됩니다. 생활권이 밀접한 만큼 학습 카페나 도서관 등의 공공 학습 공간 이용이 활발하며, 지역 행사나 설명회 참여를 통해 학부모의 학습 인식이 점차 확산됩니다. 많은 학생들은 동네의 안전한 통학 경로를 공유하고, 자율 학습의 중요성을 체감합니다.</p>

@@ -161,6 +161,11 @@ h1 {
   line-height: 1.18;
   letter-spacing: 0;
 }
+.fixed-image-stack {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 72px;
+}
 .article-body.studynavi-flow {
   width: 100%;
   max-width: 1000px;
@@ -334,6 +339,7 @@ a:focus-visible {
   main { width: 100%; padding: 28px 16px 64px; }
   .breadcrumbs { font-size: .88rem; margin-bottom: 18px; }
   h1 { margin-bottom: 24px; font-size: clamp(1.85rem, 9vw, 2.55rem); }
+  .fixed-image-stack { margin-bottom: 52px; }
   .article-body.studynavi-flow { font-size: 16px; line-height: 1.82; margin-bottom: 52px; }
   .representative-image,
   .flow-image { margin: 26px 0; }
@@ -356,20 +362,24 @@ a:focus-visible {
   <main>
     <nav class="breadcrumbs" aria-label="breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../광주과외/">광주과외</a></li><li><a href="../광주과외/광주북구과외/">광주북구과외</a></li><li><a href="../광주과외/광주북구과외/우산동과외/">우산동과외</a></li><li><a href="./">우산동중등과외</a></li></ol></nav>
     <h1>우산동중등과외</h1>
-    <div class="article-body studynavi-flow">
+    <div class="fixed-image-stack">
 <figure class="representative-image"><img src="../images/thumbs/fixed/001.png" alt="우산동중등과외 맞춤 과외 안내 이미지 001" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <figure class="flow-image"><img src="../images/thumbs/fixed/002.png" alt="우산동중등과외 맞춤 과외 안내 이미지 002" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/003.png" alt="우산동중등과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/004.png" alt="우산동중등과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/005.png" alt="우산동중등과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
+<figure class="flow-image"><img src="../images/thumbs/fixed/006.png" alt="우산동중등과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
+</div>
+    <div class="article-body studynavi-flow">
 <section class="article-card">
 <h2>우산동 지역에서의 중등 학습환경이 아이의 공부태도에 주는 영향</h2>
 <p>우산동의 학교생활은 교실 밀집도와 과제 양이 지역별로 다르지만, 공통적으로 중등기에 중요한 것은 학습습관과 시간관리의 습관화다. 이 글은 지역 학습환경과 중학생의 성장 과정을 연결해, 자기주도학습과 내신관리, 시험대비까지 포괄적으로 다룬다. 특히 사례 중심으로 실제 상황에서 어떻게 습관이 형성되고 변화하는지 살펴본다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/003.png" alt="우산동중등과외 맞춤 과외 안내 이미지 003" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>실제 학생 사례를 통해 본 중학생의 학습습관 형성 과정</h2>
 <p>사례 1: 중1 학습환경 변화에 적응하는 아이는 수업 후 30분의 예습 시간을 확보했다. 처음엔 집중이 쉽게 흐트러졌지만, 부모와 함께 공간을 정리하고 스마트폰 사용을 제한하자 집중력이 높아졌다. 이때 핵심은 작은 성공 경험이다. 예습복습 루틴이 잡히면서 어휘력과 독해력의 기초가 다져졌고, 국어 과목에서의 수행평가도 안정적으로 진행되었다.</p>
 <p>사례 2: 중3의 아이는 지역 특성상 방과 후 학교 활동이 많아 시간 관리가 핵심 과제였다. 방학 동안의 학습환경 조정과 목표 설계로 내신 관리의 가이드를 만들고, 모의고사 전날 오답정리를 집중적으로 수행했다. 그 결과 전체 성적 분포에서의 위치가 상향되었고, 고입 준비에 필요한 사고력과 문제해결력도 함께 향상되었다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/004.png" alt="우산동중등과외 맞춤 과외 안내 이미지 004" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>중등 자기주도학습의 실전 방법과 지역 차이의 연결고리</h2>
 <ul>
@@ -379,12 +389,10 @@ a:focus-visible {
 </ul>
 <p>우산동의 가정에서 가장 많이 보이는 성공 포인트는 “오늘의 계획이 내일의 성취로 이어진다”는 인식이다. 지역 환경에 따라 교과별 학습리소스의 활용도 차이가 있지만, 자기주도학습의 핵심은 같은 방식으로 작동한다. 예를 들어 어휘력 강화는 매일 짧은 독해와 어휘 문제를 병행하는 방식이 효과적이다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/005.png" alt="우산동중등과외 맞춤 과외 안내 이미지 005" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>내신관리와 시험대비의 실전 루틴</h2>
 <p>내신관리는 과목별 특징을 파악하고 평가 항목에 맞춘 학습을 반복하는 것이다. 우산동의 학교별 경향을 반영해, 수학은 개념-문제풀이-오답정리의 순서를, 영어는 읽기-듣기-쓰기의 흐름으로 구성하는 루틴이 필요하다. 시험대비는 과거 문제와 모의고사를 활용해 출제 경향을 파악하고, 오답노트를 체계적으로 정리하는 과정이 중요하다.</p>
 </section>
-<figure class="flow-image"><img src="../images/thumbs/fixed/006.png" alt="우산동중등과외 맞춤 과외 안내 이미지 006" width="1200" height="630" loading="lazy" decoding="async"></figure>
 <section class="article-card">
 <h2>오답정리의 힘과 학습태도 개선</h2>
 <p>오답정리는 단순한 틀림의 기록이 아니다. 잘못 이해한 개념을 다시 확인하고, 같은 실수를 반복하지 않도록 사고의 흐름을 점검하는 과정이다. 지역 학부모의 경우도 오답정리의 중요성과 시간 배분을 함께 지도하면, 자기주도학습의 시작점이 된다.</p>
